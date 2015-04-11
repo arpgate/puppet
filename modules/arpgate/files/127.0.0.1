@@ -1,0 +1,11 @@
+server {
+  listen 8887;
+  server_name arpgate.home.local;
+  root /var/www/arpgate;
+  index index.html;
+
+  location / {
+    try_files $uri /index.html;
+  }
+}
+

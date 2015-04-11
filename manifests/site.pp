@@ -112,7 +112,7 @@ file {'/etc/haproxy/haproxy.cfg':
     group   => 'root',
     mode    => '0777',
     require => Package['haproxy'],
-    source => 'puppet:///modules/haproxy/haproxy.cfg',
+    source => 'puppet:///modules/arpgate/haproxy.cfg',
 }
 
 service { 'haproxy':
@@ -137,7 +137,7 @@ file {'/etc/nginx/sites-available/127.0.0.1':
     group   => 'root',
     mode    => '0777',
     require => Package['nginx'],
-    source => 'puppet:///modules/nginx/127.0.0.1',
+    source => 'puppet:///modules/arpgate/127.0.0.1',
 }
 
 file { 'arpgate-nginx-enable':
