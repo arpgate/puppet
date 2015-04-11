@@ -1,6 +1,6 @@
 # arpgate puppet file
 
-include  nmap 
+include  nmap, tmux , dns::server, sqlite
 
 # update
 exec { 'apt-get update':
@@ -53,6 +53,54 @@ class golang {
     }
 }
 
+node 'arpgate.home.local' {
+  include dns::server
+
+  # Forwarders
+  dns::server::options { '/etc/bind/named.conf.options':
+    forwarders => [ '8.8.8.8', '8.8.4.4' ]
+  }
+
+  # Forward Zone
+    dns::zone { 'home.local':
+    soa         => 'ns1.home.local',
+    soa_email   => 'admin.home.local',
+    nameservers => ['ns1']
+  }
+
+  # Reverse Zone
+  dns::zone { '0.0.10.IN-ADDR.ARPA':
+    soa         => 'ns1.home.local',
+    soa_email   => 'admin.home.local',
+    nameservers => ['ns1']
+  }
+
+  # A Records:
+  dns::record::a {
+    'arpgate':
+      zone => 'home.local',
+      data => ['10.0.0.7'];
+  }
+}
+
+class { 'dhcp':
+  dnsdomain    => [
+    'home.local',
+    '0.0.10.in-addr.arpa',
+    ],
+  nameservers  => ['10.0.0.7'],
+  ntpservers   => ['10.0.0.7'],
+  interfaces   => ['eth0'],
+  pxeserver    => '10.0.0.7',
+  pxefilename  => 'pxelinux.0',
+}
+
+dhcp::pool{ 'home.local':
+  network => '10.0.0.0',
+  mask    => '255.255.255.0',
+  range   => ['10.0.0.100 10.0.0.200'],
+  gateway => '10.0.0.1',
+}
 
 package { 'haproxy':
     ensure => 'present',

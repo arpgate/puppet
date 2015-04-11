@@ -1,0 +1,15 @@
+{
+  "Gemfile": "910d5837b7f077cdf5a7005fab5b6ad2",
+  "Guardfile": "bd764c63bdbc7c3ddcb125cf694a9a53",
+  "README.md": "aa29730a3ebfa8160069054b620e9265",
+  "Rakefile": "9aa68d6905b66712a8efae0df2199bb5",
+  "manifests/init.pp": "99e55f7f16401b8c284ee45abe586016",
+  "manifests/params.pp": "b67ea45b2279966ce8395f9babda05b0",
+  "metadata.json": "ab88c5da9b741d7ed6842a3c82995bbe",
+  "spec/classes/init_spec.rb": "ebec17fe109c6aba07932f539e648c26",
+  "spec/fixtures/manifests/site.pp": "d41d8cd98f00b204e9800998ecf8427e",
+  "spec/spec.opts": "11ce6e9c4d032ec62ee4e4f1a7148987",
+  "spec/spec_helper.rb": "792eeb7aa7edafb93e2bc1d27c5e75c5",
+  "templates/tmux.conf.erb": "a3a20c9353e08db37734d37710955d4a",
+  "tests/init.pp": "21afe89f3c27fa29e4f2d172524d07c1"
+}

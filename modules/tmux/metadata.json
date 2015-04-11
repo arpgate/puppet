@@ -1,0 +1,28 @@
+{
+  "name": "zanloy-tmux",
+  "version": "1.0.1",
+  "author": "zanloy",
+  "summary": "A puppet class to handle tmux installation and configuration.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/zanloy/puppet-tmux",
+  "project_page": "https://github.com/zanloy/puppet-tmux",
+  "issues_url": "https://github.com/zanloy/puppet-tmux/issues",
+  "description": "tmux is a better implementation of a terminal multiplexer than GNU/screen. It can basically be dropped in as a replacement if you change the prefix key.",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS"
+    },
+    {
+      "operatingsystem": "Debian"
+    },
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "Ubuntu"
+    }
+  ],
+  "dependencies": [
+  
+  ]
+}
