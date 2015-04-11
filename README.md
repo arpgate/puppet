@@ -14,9 +14,8 @@ cd puppet
 sudo puppet apply --modulepath=/home/ubuntu/puppet/modules manifests/site.pp
 
 
-
-If you like to install the modules manually do:
-
+Manual install
+==============
 sudo puppet module install  --modulepath=/home/ubuntu/puppet/modules puppetlabs-concat
 
 sudo puppet module install  --modulepath=/home/ubuntu/puppet/modules puppetlabs-haproxy
