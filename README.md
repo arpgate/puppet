@@ -5,9 +5,14 @@ The modules directory includes all Puppet modules.
 
 To checkout in /home/ubuntu/puppet on the Raspberry Pi:
 
-cd /home/ubuntu/puppet
+cd /home/ubuntu
 
 git clone https://github.com/arpgate/puppet 
+
+cd puppet
+
+sudo puppet apply --modulepath=/home/ubuntu/puppet/modules manifests/site.pp
+
 
 
 If you like to install the modules manually do:
