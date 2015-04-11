@@ -1,4 +1,4 @@
-# puppet
+# Puppet
 puppet scripts to build an arpgate image
 
 The modules directory includes all Puppet modules.
