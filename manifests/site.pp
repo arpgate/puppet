@@ -79,7 +79,7 @@ node 'arpgate.home.local' {
   dns::record::a {
     'arpgate':
       zone => 'home.local',
-      data => ['10.0.0.7'];
+      data => ['10.0.0.253'];
   }
 }
 
@@ -88,10 +88,10 @@ class { 'dhcp':
     'home.local',
     '0.0.10.in-addr.arpa',
     ],
-  nameservers  => ['10.0.0.7'],
-  ntpservers   => ['10.0.0.7'],
+  nameservers  => ['10.0.0.253'],
+  ntpservers   => ['10.0.0.253'],
   interfaces   => ['eth0'],
-  pxeserver    => '10.0.0.7',
+  pxeserver    => '10.0.0.253',
   pxefilename  => 'pxelinux.0',
 }
 
