@@ -1,0 +1,25 @@
+{
+  "name": "dcoxall-golang",
+  "version": "1.1.1",
+  "source": "https://github.com/FreakyDazio/dcoxall-golang",
+  "author": "Darren Coxall",
+  "license": "MIT",
+  "summary": "A barebones Go installation",
+  "description": "A barebones Go installation",
+  "project_page": "https://github.com/FreakyDazio/dcoxall-golang",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "LICENSE": "f8a48fc881716de69a658fae9dbb50bf",
+    "Modulefile": "ae320dbd390e07282eceab380ad1ca22",
+    "README.markdown": "e0b85736b1738b52bc2d2588b2fa77cb",
+    "manifests/init.pp": "dee4b57d136f73780d5a5b575fb60fb4",
+    "spec/spec_helper.rb": "e168041ab3707f4e104d6a46ea414f0a",
+    "templates/golang.sh.erb": "e1394c9baa0deee28260a1ec2e34b48f",
+    "tests/init.pp": "66d05375050d3ee6e8a72c8b68122c23"
+  }
+}
