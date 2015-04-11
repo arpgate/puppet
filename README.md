@@ -1,11 +1,12 @@
 # puppet
 puppet scripts to build an arpgate image
 
+The modules directory includes all Puppet modules.
 
-The modules directory includes the modules,
-Checkout in /home/ubuntu/puppet on the Raspberry Pi:
+To checkout in /home/ubuntu/puppet on the Raspberry Pi:
 
 cd /home/ubuntu/puppet
+
 git clone https://github.com/arpgate/puppet 
 
 
