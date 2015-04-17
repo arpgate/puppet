@@ -166,3 +166,4 @@ class { 'tftp':
   options   => '--ipv6 --timeout 60',
 }
 
+// sysctl { 'net.ipv4.ip_forward': value => '1' }
