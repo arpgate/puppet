@@ -43,3 +43,5 @@ sudo puppet module install --modulepath=/home/ubuntu/puppet/modules zanloy-tmux
 sudo puppet module install --modulepath=/home/ubuntu/puppet/modules ajjahn-dns
 
 sudo puppet module install --modulepath=/home/ubuntu/puppet/modules puppetlabs-sqlite
+
+sudo puppet module install --modulepath=/home/ubuntu/puppet/modules thias-sysctl
